@@ -36,6 +36,8 @@ BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
+
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 # DTBO
