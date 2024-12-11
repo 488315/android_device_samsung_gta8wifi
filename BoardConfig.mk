@@ -21,5 +21,13 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := ums512_25c10
+TARGET_NO_BOOTLOADER := true
+
+# Platform
+TARGET_BOARD_PLATFORM := ums512
+BOARD_HAS_UNISOC_HARDWARE := true
+
 # Inherit the proprietary files
 include vendor/samsung/gta8wifi/BoardConfigVendor.mk
