@@ -10,6 +10,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.ums512_25c10 \
+    fstab.ums512_25c10.ramdisk \
+    init.gta8wifi.rc \
+    init.storage.rc \
+    init.ums512_25c10.rc \
+    init.ums512_25c10.usb.rc \
+    ueventd.ums512_25c10.rc
+
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 30
 

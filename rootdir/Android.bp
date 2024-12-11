@@ -1,0 +1,47 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init.gta8wifi.rc",
+    src: "etc/init.gta8wifi.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.storage.rc",
+    src: "etc/init.storage.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums512_25c10.rc",
+    src: "etc/init.ums512_25c10.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums512_25c10.usb.rc",
+    src: "etc/init.ums512_25c10.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "fstab.ums512_25c10",
+    src: "etc/fstab.ums512_25c10",
+    vendor: true,
+    ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.ums512_25c10.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.ums512_25c10.rc",
+    vendor: true,
+}
